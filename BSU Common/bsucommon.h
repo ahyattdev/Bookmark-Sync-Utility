@@ -24,8 +24,9 @@
 typedef int bookmark_type_t;
 enum bookmark_type
 {
-    folder,
-    leaf
+    bookmark_type_folder,
+    bookmark_type_leaf,
+    bookmark_type_root
 };
 
 struct folder_data
@@ -48,7 +49,6 @@ struct proxy_data
 struct root_data
 {
     struct bookmark_node* children;
-    int file_version;
 };
     
 union bookmark_data

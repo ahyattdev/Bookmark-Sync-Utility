@@ -10,10 +10,10 @@
 		667FDB1F21D5EAEC007FEB1E /* bsucommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 667FDB1E21D5EAEC007FEB1E /* bsucommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		667FDB3221D5EDF7007FEB1E /* safari_bookmark_loader.c in Sources */ = {isa = PBXBuildFile; fileRef = 667FDB3121D5EDF7007FEB1E /* safari_bookmark_loader.c */; };
 		667FDB4C21D5F25F007FEB1E /* libbsucommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 667FDB1921D5EA11007FEB1E /* libbsucommon.a */; };
-		667FDB6321D5F405007FEB1E /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667FDB6221D5F405007FEB1E /* CoreFoundation.framework */; };
 		6688FC5D21D675170061E2DD /* bookmark_loader.c in Sources */ = {isa = PBXBuildFile; fileRef = 6688FC5B21D675170061E2DD /* bookmark_loader.c */; };
 		6688FC5F21D676180061E2DD /* bsuprivate.h in Headers */ = {isa = PBXBuildFile; fileRef = 6688FC5E21D676180061E2DD /* bsuprivate.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		6688FC8821D692F30061E2DD /* constants.c in Sources */ = {isa = PBXBuildFile; fileRef = 6688FC8721D692F30061E2DD /* constants.c */; };
+		6688FD0C21D6BAA90061E2DD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 667FDB6221D5F405007FEB1E /* CoreFoundation.framework */; };
 		8DD76FAC0486AB0100D96B5E /* bookmarksync.c in Sources */ = {isa = PBXBuildFile; fileRef = 08FB7796FE84155DC02AAC07 /* bookmarksync.c */; settings = {ATTRIBUTES = (); }; };
 		8DD76FB00486AB0100D96B5E /* bookmarksync.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = C6A0FF2C0290799A04C91782 /* bookmarksync.1 */; };
 /* End PBXBuildFile section */
@@ -59,7 +59,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				667FDB6321D5F405007FEB1E /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -68,6 +67,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				667FDB4C21D5F25F007FEB1E /* libbsucommon.a in Frameworks */,
+				6688FD0C21D6BAA90061E2DD /* CoreFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
