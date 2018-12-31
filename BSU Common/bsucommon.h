@@ -21,13 +21,15 @@
 
 #include <CoreFoundation/CoreFoundation.h>
 
-typedef int bookmark_type_t;
+/* The title of the bookmark folder */
+#define BSU_ROOT_TITLE "Root";
+
 enum bookmark_type
 {
     bookmark_type_folder,
-    bookmark_type_leaf,
-    bookmark_type_root
+    bookmark_type_leaf
 };
+typedef enum bookmark_type bookmark_type;
 
 struct folder_data
 {
@@ -39,23 +41,11 @@ struct leaf_data
 {
     char *url;
 };
-
-/* Something like History, Bookmarks Bar, Address Book, etc */
-struct proxy_data
-{
-    char *identifier;
-};
-
-struct root_data
-{
-    struct bookmark_node* children;
-};
     
 union bookmark_data
 {
     struct folder_data folder;
     struct leaf_data leaf;
-    struct root_data root;
 };
 
 /* The main datastructure for bookmarks. Each one is a linked list of
@@ -63,14 +53,16 @@ union bookmark_data
  */
 struct bookmark_node
 {
-    char *uuid;
     char *title;
-    bookmark_type_t type;
+    bookmark_type type;
     union bookmark_data data;
     struct bookmark_node *next;
 };
 
 /* Loads the bookmarks from the local user into the bookmark datastructure */
 struct bookmark_node* load_bookmarks(void);
+
+/* Writes a human-readable representation of the bookmark hierarchy to stdout */
+void print_bookmarks(const struct bookmark_node *tree_to_print);
 
 #endif

@@ -26,7 +26,7 @@ int main (int argc, const char * argv[])
     
     bookmarks = load_bookmarks();
     
-    printf("Root node UUID: %s\n", bookmarks->uuid);
+    print_bookmarks(bookmarks);
     
     return 0;
 }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		662186C021D9AA6100907344 /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 662186BF21D9AA6100907344 /* utils.c */; };
 		667FDB1F21D5EAEC007FEB1E /* bsucommon.h in Headers */ = {isa = PBXBuildFile; fileRef = 667FDB1E21D5EAEC007FEB1E /* bsucommon.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		667FDB3221D5EDF7007FEB1E /* safari_bookmark_loader.c in Sources */ = {isa = PBXBuildFile; fileRef = 667FDB3121D5EDF7007FEB1E /* safari_bookmark_loader.c */; };
 		667FDB4C21D5F25F007FEB1E /* libbsucommon.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 667FDB1921D5EA11007FEB1E /* libbsucommon.a */; };
@@ -43,6 +44,7 @@
 
 /* Begin PBXFileReference section */
 		08FB7796FE84155DC02AAC07 /* bookmarksync.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = bookmarksync.c; path = bookmarksync/bookmarksync.c; sourceTree = "<group>"; };
+		662186BF21D9AA6100907344 /* utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = utils.c; path = "BSU Common/utils.c"; sourceTree = "<group>"; };
 		667FDB1921D5EA11007FEB1E /* libbsucommon.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libbsucommon.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		667FDB1E21D5EAEC007FEB1E /* bsucommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bsucommon.h; path = "BSU Common/bsucommon.h"; sourceTree = "<group>"; };
 		667FDB3121D5EDF7007FEB1E /* safari_bookmark_loader.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = safari_bookmark_loader.c; path = "BSU Common/safari_bookmark_loader.c"; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 		667FDB1D21D5EAAA007FEB1E /* BSU Common */ = {
 			isa = PBXGroup;
 			children = (
+				662186BF21D9AA6100907344 /* utils.c */,
 				667FDB1E21D5EAEC007FEB1E /* bsucommon.h */,
 				6688FC5E21D676180061E2DD /* bsuprivate.h */,
 				667FDB3121D5EDF7007FEB1E /* safari_bookmark_loader.c */,
@@ -200,6 +203,7 @@
 				667FDB3221D5EDF7007FEB1E /* safari_bookmark_loader.c in Sources */,
 				6688FC5D21D675170061E2DD /* bookmark_loader.c in Sources */,
 				6688FC8821D692F30061E2DD /* constants.c in Sources */,
+				662186C021D9AA6100907344 /* utils.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
